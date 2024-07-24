@@ -10,7 +10,6 @@ namespace TDD_Examples.Tests
     [SetUp]
     public void SetUp()
     {
-
       _userAccount = new UserAccount();
     }
   }

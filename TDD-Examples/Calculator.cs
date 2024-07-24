@@ -1,4 +1,6 @@
-﻿namespace TDD_Examples
+﻿using System;
+
+namespace TDD_Examples
 {
   public class Calculator
   {
@@ -19,6 +21,7 @@
 
     public double Divide(int a, int b)
     {
+      if (b == 0) throw new DivideByZeroException();
       return (double)a / b;
     }
   }
