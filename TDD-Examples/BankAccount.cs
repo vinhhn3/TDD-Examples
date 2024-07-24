@@ -15,16 +15,30 @@
     }
 
 
-    // Adds the specified amount to the bank account balance.
-    // Throws an ArgumentException if the amount is less than or equal to zero.
+    /// <summary>
+    /// Deposits a specified amount into the account.
+    /// </summary>
+    /// <param name="amount">The amount to deposit. Must be positive.</param>
+    /// <exception cref="ArgumentException">
+    /// Thrown when the deposit amount is less than or equal to zero.
+    /// </exception>
     public void Deposit(decimal amount)
     {
 
     }
 
-    // Subtracts the specified amount from the bank account balance.
-    // Throws an ArgumentException if the amount is less than or equal to zero,
-    // and an InvalidOperationException if the amount exceeds the current balance.
+    /// <summary>
+    /// Withdraws a specified amount from the account.
+    /// </summary>
+    /// <param name="amount">
+    /// The amount to withdraw. Must be positive and less than or equal to the current balance.
+    /// </param>
+    /// <exception cref="ArgumentException">
+    /// Thrown when the withdrawal amount is less than or equal to zero.
+    /// </exception>
+    /// <exception cref="InvalidOperationException">
+    /// Thrown when the withdrawal amount exceeds the current balance.
+    /// </exception>
     public void Withdraw(decimal amount)
     {
 
